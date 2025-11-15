@@ -1,69 +1,61 @@
-# React + TypeScript + Vite
+# Adjuvo Front-End
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **Adjuvo Front-End**!  
+This project is built with **Vite.js**, **React**, **TypeScript**, **Tailwind CSS**, and follows **Atomic Design** principles.
 
-Currently, two official plugins are available:
+It connects to the **Hedera Hashgraph** network for Web3 functionalities and mission management.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Web3 Integration**:
+  - WalletConnect for connecting different Hedera wallets
+  - Hedera SDK for storing and retrieving data on the Hashgraph
+  - Transaction creation for missions
+  - NFT generation
+  - HIP-991 for generating cashflows
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Front-End Stack**:
+  - Vite.js + React + TypeScript
+  - Tailwind CSS for styling
+  - Atomic Design structure (Atoms, Molecules, Organisms, Templates, Pages)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Getting Started
+
+1. Install dependencies:
+```npm install```
+
+2. Run the development server:
+
+```npm run dev```
+
+Environment Variables
+
+Create a .env file in the root directory with the following variables:
+
+```
+VITE_PRIVATE_KEY=
+VITE_MY_ACCOUNT_ID=
+VITE_PUBLIC_KEY=
+VITE_LS_TOKEN_KEY=adjuvo-token
+VITE_LS_ROLE_KEY=adjuvo-role
+VITE_HEDERA_ACCOUNT_ID=
+VITE_HEDERA_PRIVATE_KEY=
+VITE_CONTRACT_SECRET_KEY=
+VITE_CONTRACT_ALGORITHM=aes-256-cbc
+VITE_CONTRACT_IV_LENGTH=16
+VITE_API_URL=YOUR_API_URL
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+These variables are required for Hedera wallet integration, API connection, local storage, and contract encryption.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Notes
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Make sure your Hedera wallet is connected using WalletConnect.
+
+You need Hedera account keys to interact with the Hashgraph and perform transactions.
+
+This project focuses on Web3 missions, NFTs, and community interactions.
