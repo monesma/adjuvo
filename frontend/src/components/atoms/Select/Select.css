@@ -1,0 +1,109 @@
+.custom-select {
+    position: relative;
+    width: 250px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 4px;
+  }
+  
+  .select-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .select-trigger:hover,
+  .select-trigger:focus-within {
+    border-color: #40a9ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+  }
+  
+  .select-trigger input {
+    width: 100%;
+    padding: 6px 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+    background: transparent;
+  }
+  
+  .select-trigger input::placeholder {
+    color: #999;
+  }
+  
+  .arrow {
+    font-size: 16px;
+    color: #999;
+    transition: transform 0.3s ease;
+    margin-left: 8px;
+  }
+  
+  .arrow.up {
+    transform: rotate(180deg);
+  }
+  
+  .options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #d9d9d9;
+    border-top: none;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 10;
+    max-height: 300px; /* Augmenter la hauteur maximale si nécessaire */
+    overflow-y: auto;
+    font-size: 14px;
+    color: #333;
+    margin-top: 4px;
+    padding: 5px 0;
+  }
+  
+  .option {
+    padding: 12px 16px; /* Augmenter la taille des options */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  
+  .option:hover,
+  .option:focus {
+    background-color: #f5f5f5;
+    color: #1890ff;
+  }
+  
+  .option.selected {
+    background-color: #bae7ff;
+  }
+  
+  .option:active {
+    background-color: #e6f7ff;
+  }
+  
+  .option-disabled {
+    color: #d9d9d9;
+    cursor: not-allowed;
+  }
+  
+  .option-group {
+    padding: 4px 12px;
+    font-size: 12px;
+    color: #888;
+    font-weight: 600;
+  }
+  

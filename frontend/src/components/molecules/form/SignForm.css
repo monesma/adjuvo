@@ -1,0 +1,54 @@
+form.sign {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mode-wallet-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .mode-wallet-image-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.wallet-and-mode {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 250px;
+}
+
+.mode-selector {
+  display: flex;
+  flex-direction: column;
+}
+
+.mode-selector label {
+  margin-bottom: 8px;
+}
+
+.mode-selector .selected {
+  background-color: #4f46e5;
+  color: white;
+  border: 1px solid white;
+}
+
+form p {
+  text-align: center;
+}

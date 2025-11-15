@@ -1,0 +1,26 @@
+#walletConnect{
+  color: #e5e5e5;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  line-height: 1.75rem;
+  padding: 0.2rem; 
+  border-radius: 0.375rem;
+  background-color: #4f46e5;
+  box-shadow: 8px 8px 15px 0px rgba(75, 92, 156, 0.6) inset;
+  transition: all 0.3s ease-in-out;
+  }
+
+#walletConnect:hover {
+  filter: brightness(1.1);
+  transform: scale(1.03);
+  box-shadow: 8px 8px 15px 0px rgba(75, 92, 156, 0.8) inset, 0 0 10px rgba(75, 92, 156, 0.5);
+}
+
+@media screen and(min-width: 728px){
+  #walletConnect{
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    margin-left: 10px;
+  }
+}

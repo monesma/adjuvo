@@ -1,0 +1,19 @@
+.ant-form-item {
+  margin-bottom: 24px !important;
+}
+
+.ant-form-item-label {
+  padding: 0 0 0px 0 !important;
+  margin-top: 12px !important;
+  color: white !important;
+}
+
+.ant-form-item-label > label {
+  height: 18px !important;
+  color: white !important;
+}
+
+/* Pour le premier élément du formulaire, on ne veut pas de marge en haut */
+.ant-form-item:first-child .ant-form-item-label {
+  margin-top: 0 !important;
+}

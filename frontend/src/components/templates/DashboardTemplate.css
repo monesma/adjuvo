@@ -1,0 +1,139 @@
+.dashboard-template {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+
+  /*Main*/
+
+.header {
+  padding: 0 20px;
+  background-color: #fff;
+  height: 6vh;
+  border-bottom: 1px solid #d2e3c8;
+}
+.dashboard-template main {
+  flex-grow: 1;
+}
+
+.triger-btn {
+  font-size: 16px;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+/*Sider*/
+
+.sider {
+  height: 100vh;
+  position: sticky !important;
+  left: 0;
+  bottom: 0;
+  top: 0;
+}
+
+
+
+/*Header*/
+
+.header-icon {
+  background: #d2e3c8;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 20px;
+  background-color: #3730a3;
+  color: white;
+  cursor: pointer;
+}
+
+.ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+  background-color: white !important;
+  color: white !important;
+}
+
+.ant-btn:hover {
+  color: #1E2A38 !important;
+  border-color: #1E2A38 !important;
+}
+
+.ant-btn-primary {
+  background-color: #1E2A38 !important;
+}
+
+.primary--color {
+  color: #1E2A38 !important;
+}
+
+.secondary--color {
+  color: #1E2A38!important;
+}
+
+.light--color {
+  color: #d2e3c8 !important;
+}
+
+.gray--color {
+  color: rgb(182, 1181,181) !important;
+}
+
+.footer {
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.search-input {
+  padding: 15px;
+}
+.search-input .ant-input-affix-wrapper, .search-input .ant-input-group-addon button{
+  border-radius: 0 !important;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.ant-menu-item {
+  padding: 10px !important;
+  border-radius: 0 !important;
+}
+
+.ant-menu-item-selected {
+  background-color: #3730a3 !important;
+  color: #fff !important;
+  border-radius: 0 !important;
+}
+
+@media screen and (min-width: 768px){
+  .content {
+    flex-direction: row;
+    height: calc(100vh - 6vh - 5vh);
+  }
+
+  .ant-menu-item {
+    padding: 20px !important;
+    border-radius: 0 !important;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .bottom {
+    max-height: 86vh;
+  }
+}
+
+@media screen and (min-width: 1800px){
+  
+}

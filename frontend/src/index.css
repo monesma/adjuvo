@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+.avatar-selector img:hover {
+  filter: brightness(0.85);
+  transition: filter 0.2s;
+}
+
+.profile-form {
+  background-color: #010101;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+}
+
+.profile-form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.profile-form input {
+  background-color: white !important;
+  color: black !important;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}

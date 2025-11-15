@@ -1,0 +1,1 @@
+export const avatars = Array.from({ length: 18 }, (_, i) => `avatar-${i + 1}.jpg`);
