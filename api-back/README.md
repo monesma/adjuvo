@@ -1,6 +1,3 @@
-Parfait ! Voici ton README complet prêt à être enregistré dans un fichier `README.md`. Tu peux directement copier ce contenu dans un fichier `.md`.
-
-````markdown
 # Adjuvo API (Back-End)
 
 Welcome to the **Adjuvo API**!  
