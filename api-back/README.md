@@ -93,7 +93,7 @@ This structure ensures **modularity, scalability, and testability**.
 Run tests with:
 
 ```bash
-npm test
+npm run test
 ```
 
 Tests are organized under `src/test/` and cover **unit and integration scenarios**.
